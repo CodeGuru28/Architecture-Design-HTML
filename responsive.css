@@ -1,0 +1,165 @@
+@media (max-width:1300px){
+    .home{
+        padding: 1.5rem 2rem;
+    }
+    .home .top{
+        max-width: 65vw;
+    }
+    .home .top p{
+        font-size: 1.4rem;
+        max-width: 85vw;
+    }
+    .home .top h1{
+        font-size: 2.8rem;
+        margin-bottom: 0.5rem;
+    }
+    .home .search2{
+        display: flex;
+    }
+    .home .search{
+        display: none;
+    }
+    .home .bottom .row2 .cards .card{
+        min-width: 10rem;
+    }
+}
+
+@media (max-width: 1025px){
+    nav{
+        padding-inline: 3rem;
+    }
+
+    nav .btns{
+        gap: 1rem;
+    }
+
+    nav ul li a{
+        padding: 0.6rem;
+    }
+
+    .home .top{
+        max-width: 60vmax;
+    }
+    .home .top p{
+        font-size: 1rem;
+        max-width: 85vw;
+    }
+    .home .top h1{
+        font-size: 2.4rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .home .bottom .row2 .cards .card h4{
+        font-size: 0.8rem;
+    }
+    .home .bottom .row2 .cards .card .info p{
+        font-size: 1rem;
+    }
+    .home .bottom .row2 .cards .card .info{
+        gap: 1rem;
+    }
+    .home .bottom .row1 h5{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 920px){
+    .container{
+        margin: 1rem;
+    }
+    nav ul{
+        display: none;
+    }
+
+    nav .btns .sub-btn{
+        display: none;
+    }
+
+    .bx-menu{
+        display: block;
+    }
+
+    .home .top{
+        background: none;
+    }
+    .home .bottom .row2 .cards .card{
+        min-width: 15rem;
+    }
+}
+
+@media (max-width: 700px){
+    .home .top{
+        max-width: 95vw;
+    }
+
+    .home .top h1{
+        font-size: 2rem;
+        line-height: 2.8rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .home .top p{
+        font-size: 1rem;
+    }
+
+    .home .bottom{
+        flex-wrap: nowrap;
+        max-width: fit-content;
+        align-self: center;
+    }
+
+    .home .bottom .row2{
+        justify-content: center;
+    }
+
+    .home .bottom .row2 .cards{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .home .bottom .row2 .cards .card{
+        min-width: 20rem;
+    }
+
+    .home .bottom .row2 .cards .card .info{
+        gap: 3rem
+    }
+    .stats .stat{
+        min-width: 100%;
+    }
+
+    .our-work .works .work{
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 450px){
+    nav .btns .btn{
+        display: none;
+    }
+    .home .top{
+        width: 80vw;
+    }
+    .home .top h1{
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+    .home .top p{
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+    .home .bottom{
+        overflow: scroll;
+    }
+    .home .bottom .row1 h5{
+        font-size: 1.4rem;
+    }
+    .home .bottom .row2 .cards .card{
+        min-width: 10rem;
+        padding: 0;
+        padding-top: 1.2rem;
+        padding-left: 1rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}

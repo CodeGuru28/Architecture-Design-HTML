@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+li{
+    list-style-type: none;
+}
+
+.btn{
+    padding: 0.8rem 1.6rem;
+    border-radius: 1.2rem;
+    background-color: #000;
+    color: #fff;
+}
+
+/* header{
+    padding: 1.8rem 5rem;
+} */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+    padding-inline: 5rem;
+}
+
+nav .logo a{
+    position: relative;
+}
+
+nav .logo i{
+    position: absolute;
+    font-size: 0.75rem;
+    top: 0;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+nav ul li a{
+    padding: 1rem;
+}
+
+nav .btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4.5rem;
+}
+
+nav .btns a{
+    font-weight: 600;
+}
+
+.bx-menu{
+    display: none;
+    font-size: 3rem;
+}
+
+.container{
+    margin-inline: 0.8rem;
+    border-radius: 2rem;
+}
+
+.home{
+    padding: 3rem;
+    height: 88vh;
+    background-image: url(./img/hero-background2.jpg);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.home::before{
+    background: rgb(127,127,127);
+    background: linear-gradient(90deg, rgba(127,127,127,0.6924019607843137) 0%, rgba(142,142,142,0.3786764705882353) 38%, rgba(196,196,196,0.05934873949579833) 54%, rgba(255,255,255,0) 100%);
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    border-radius: 2rem;
+}
+
+.home .top{
+    position: relative;
+    z-index: 100;
+    max-width: 40vw;
+    color: #fff;
+    background: rgb(127,127,127);
+    background: linear-gradient(90deg, rgba(127,127,127,0.0761554621848739) 0%, rgba(255,255,255,0) 100%);
+}
+
+.home .top h1{
+    line-height: 4rem;
+    font-size: 3.2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.home .top p{
+    max-width: 26vw;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.home .bottom{
+    background-color: #fff;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.4rem;
+    padding:1.8rem 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+}
+
+.home .bottom .row1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    gap: 4rem;
+}
+
+.home .bottom .row1 .headings{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.home .bottom .row2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.home .bottom .row2 .cards{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.home .bottom .row2 .cards .card{
+    min-width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 2rem;
+}
+
+.home .bottom .row2 .cards .card .info{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3rem;
+}
+
+.home .bottom .row2 .cards .card:nth-child(2){
+    border-left: 2px solid rgb(189, 189, 189);
+    border-right: 2px solid rgb(189, 189, 189);
+}
+.home .bottom .row1 h5{
+    font-weight: 600;
+    font-size: 1.5rem;
+    position: relative;
+    color: rgb(197, 197, 197);
+}
+
+.home .bottom .row1 h5:nth-child(1){
+    color: #000;
+}
+
+.home .bottom .row1 h5:nth-child(1)::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 0.22rem;
+    width: 30%;
+    left: 40%;
+    background-color: black;
+    border-radius: 3rem;
+}
+
+.home .bottom .row2 .cards .card h4{
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.home .bottom .row2 .cards .card .info p{
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.home .search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .search2{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
+    border-radius: 50%;
+    font-size: 1.6rem;
+    position: absolute;
+    right: 2.5rem;
+    bottom: 2rem;
+}
+
+
+
+
+.stats{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* column-gap: 8rem; */
+    row-gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 8rem;
+}
+
+.stats .stat::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 1rem;
+}
+
+.stats .stat{
+    position: relative;
+    min-width: 25rem;
+    border-radius: 1rem;
+    min-height: 8rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.stats .stat h3{
+    z-index: 1;
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+.stats .stat p{
+    z-index: 100;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+#stat1::before{
+    background-color: rgba(217, 216, 216, 0.7) !important;
+}
+
+#stat1{
+    color: black;
+    background: url(./img/feature-img1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#stat2{
+    background: url(./img/feature-img2.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+#stat3{
+    background: url(./img/feature-img3.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.our-work{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.our-work h4{
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.our-work .works{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.our-work .works .work{
+    border-radius: 2rem;
+    min-width: 20rem;
+    min-height: 32rem;
+    background-color: red;
+    padding: 1rem 3rem 2rem 2rem;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    flex-direction: column;
+    color: white;
+    position: relative;
+}
+
+
+.our-work .works .work::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 1rem;
+    border-radius: 2rem;
+}
+
+/* .works > *{
+    z-index: 100;
+} */ 
+/* Why doesnt this work?? */
+
+#work1 i{
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    padding: 0.6rem;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    rotate: 45deg;
+    font-size: 1.5rem;
+}
+
+.works h5{
+    font-size: 1.5rem;
+    z-index: 1;
+}
+.works p{
+    max-width: 25rem;
+    font-size: 0.8rem;
+    z-index: 1;
+}
+
+.works #work1{
+    background-image: url(./img/what-we-do4.jpg);
+    background-position: center;
+    background-size: cover;
+    flex-grow: 2;
+    min-width: 17rem;
+}
+
+.works #work2{
+    background-image: url(./img/what-we-do-negotiating2.jpg);
+    background-position: center;
+    background-size: cover;
+    flex-grow: 2;
+}
+
+.works #work3{
+    background-image: url(./img/what-we-do3.jpg);
+    background-position: center;
+    background-size: contain;
+    flex-grow: 2;
+}
+
+#listing1{
+    background-image: url(./img/crowd.jpg);
+    background-position: center;
+    background-size: cover;
+    flex-grow: 2;
+}
+
+#listing2{
+    background-image: url(./img/extra2.jpg);
+    background-position: center;
+    background-size: cover;
+    flex-grow: 2;
+}
+
+#listing3{
+    background-image: url(./img/extra.jpg);
+    background-position: right;
+    background-size: cover;
+    flex-grow: 2;
+}
